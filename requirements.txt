@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-aiortc
-sounddevice
-numpy
-av
-websockets
