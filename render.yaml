@@ -3,5 +3,6 @@ services:
     name: webrtc-signaling
     runtime: python
     plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn signaling:app --host 0.0.0.0 --port 10000
+    buildCommand: pip install -r signaling/requirements.txt
+    startCommand: uvicorn signaling.signaling:app --host 0.0.0.0 --port $PORT
+    autoDeploy: true
